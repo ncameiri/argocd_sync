@@ -1,19 +1,4 @@
 
-apiVersion: argoproj.io/v1alpha1
-kind: Application
-metadata:
-  name: argo-cd3
-spec:
-  destination:
-    namespace: default
-    server: https://kubernetes.default.svc
-  project: default
-  source:
-    path: app3
-    repoURL: https://github.com/ncameiri/argocd_sync.git
-    targetRevision: HEAD
----
-
 apiVersion: apps/v1
 kind: Deployment
 metadata:
