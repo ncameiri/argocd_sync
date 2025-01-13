@@ -18,9 +18,9 @@ spec:
     spec:
       containers:
         - name: backend
-          image: daniginga/iot-basic-backend:app2
+          image: ncameiri/iot-basic-backend:app3
           ports:
-            - containerPort: 3000
+            - containerPort: 80
 ---
 apiVersion: v1
 kind: Service
@@ -33,5 +33,5 @@ spec:
   ports:
     - protocol: TCP
       port: 8888
-      targetPort: 3000
+      targetPort: 80
   type: LoadBalancer
