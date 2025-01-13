@@ -5,6 +5,8 @@ metadata:
   name: argo-cd1
   namespace: argocd
 spec:
+  syncPolicy:
+    automated: {}
   destination:
     namespace: argocd
     server: https://kubernetes.default.svc
@@ -21,6 +23,8 @@ metadata:
   name: argo-cd2
   namespace: argocd
 spec:
+  syncPolicy:
+    automated: {}
   destination:
     namespace: argocd
     server: https://kubernetes.default.svc
@@ -39,6 +43,8 @@ metadata:
   name: argo-cd3
   namespace: argocd
 spec:
+  syncPolicy:
+    automated: {}
   destination:
     namespace: argocd
     server: https://kubernetes.default.svc
