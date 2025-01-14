@@ -3,12 +3,12 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: argo-cd1
-  namespace: argocd
+  namespace: dev
 spec:
   syncPolicy:
     automated: {}
   destination:
-    namespace: argocd
+    namespace: dev
     server: https://kubernetes.default.svc
   project: default
   source:
@@ -21,12 +21,12 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: argo-cd2
-  namespace: argocd
+  namespace: dev
 spec:
   syncPolicy:
     automated: {}
   destination:
-    namespace: argocd
+    namespace: dev
     server: https://kubernetes.default.svc
   project: default
   source:
@@ -41,12 +41,12 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: argo-cd3
-  namespace: argocd
+  namespace: dev
 spec:
   syncPolicy:
     automated: {}
   destination:
-    namespace: argocd
+    namespace: dev
     server: https://kubernetes.default.svc
   project: default
   source:
