@@ -3,7 +3,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: argo-cd1
-  namespace: dev
+  namespace: argocd
 spec:
   syncPolicy:
     automated: {}
@@ -21,7 +21,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: argo-cd2
-  namespace: dev
+  namespace: argocd
 spec:
   syncPolicy:
     automated: {}
@@ -41,7 +41,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: argo-cd3
-  namespace: dev
+  namespace: argocd
 spec:
   syncPolicy:
     automated: {}
